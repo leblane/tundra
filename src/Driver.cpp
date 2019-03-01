@@ -76,7 +76,8 @@ void DriverOptionsInit(DriverOptions* self)
   self->m_ProfileOutput   = nullptr;
   #if defined(TUNDRA_WIN32)
   self->m_RunUnprotected  = false;
-#endif
+  #endif
+  self->m_QuickstartGen = false;
 }
 
 // Helper routine to load frozen data into RAM via memory mapping
